@@ -35,6 +35,7 @@ In the repository root (with installed pytest in current environment) run
 ```shell
 pytest tests.py
 ```
+All the tests run on every commit with the help of GitHub Actions. 
 
 
 ### Useful links
