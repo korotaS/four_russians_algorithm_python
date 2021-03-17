@@ -128,12 +128,3 @@ def matmul4r(mat_a, mat_b):
         for j in range(n):
             result[i][j] = row_x_col(mat_a_new[i], mat_b_new[:, j], count_matrix)
     return result
-
-
-n = 14
-mat_a = np.random.randint(0, 2, (n,n))
-mat_b = np.random.randint(0, 2, (n,n))
-res_matmul = matmul(mat_a, mat_b, binary=True)
-res_matmul4r = matmul4r(mat_a, mat_b)
-res_np_matmul = np.matmul(mat_a, mat_b) % 2
-np.array_equal(res_np_matmul, res_matmul), np.array_equal(res_matmul4r, res_matmul)
