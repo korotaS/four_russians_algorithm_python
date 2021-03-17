@@ -45,5 +45,5 @@ def test_non_binary():
     mat_b = np.random.randint(0, 2, (n, n))
     mat_a[0, 0] = 2
 
-    # with pytest.raises(Exception):
-    _ = matmul4r(mat_a, mat_b)
+    with pytest.raises(Exception):
+        _ = matmul4r(mat_a, mat_b)
